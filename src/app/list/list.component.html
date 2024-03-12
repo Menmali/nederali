@@ -1,0 +1,115 @@
+
+        <!-- Hero Area Start-->
+        <div class="slider-area ">
+            <div class="single-slider section-overly slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap text-center">
+                                <h2>Product List</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero Area End -->
+        <!-- Job List Area Start -->
+        <div class="job-listing-area pt-120 pb-120">
+            <div class="container">
+                <!-- Right content -->
+                <div class="col-xl-9 col-lg-9 col-md-8 mx-auto">
+                    <!-- Featured_job_start -->
+                    <section class="featured-job-area">
+                        <div class="container">
+                            <!-- Count of Job list Start -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="count-job mb-35">
+                                        <span>
+                                            5 Products Found
+                                        </span>
+                                        <!--  Select job items End-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Count of Job list End -->
+                            <!-- single-job-content -->
+                            <!--<?php
+                            $req = "SELECT * FROM jobs;";
+                            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                                // Retrieve the selected option from the form
+                                $selectedOption = $_POST['select'];
+
+                                // Construct SQL request based on the selected option
+                                if ($selectedOption === "") {
+                                    $req = "SELECT * FROM jobs;";
+                                } else if ($selectedOption === "salary") {
+                                    $req = "SELECT * FROM jobs ORDER BY job_salary DESC;";
+                                } else if ($selectedOption === "Spots") {
+                                    $req = "SELECT * FROM jobs ORDER BY job_Vacancy DESC;";
+                                } else if ($selectedOption === "near_expiry") {
+                                    $req = "SELECT * FROM jobs ORDER BY job_end_date ;";
+                                }
+                            }
+                            $resultat = $db->query($req);
+                            if ($resultat->rowCount() > 0) {
+                                while ($res = $resultat->fetch(PDO::FETCH_ASSOC)) {
+                                    $id = $res["job_ID"];
+                                    $name = $res["job_name"];
+                                    $loc = $res["job_location"];
+                                    $vacancy = $res["job_Vacancy"];
+                                    $sal = $res["job_salary"];
+                                    $com_name = $res["job_company_name"];
+                                    $com_mail = $res["job_company_mail"];
+                                    $nat = $res["job_nature"];
+
+                                    ?>*/-->
+                                    <div class="single-job-items mb-30">
+                                        <div class="job-items">
+                                            
+                                            <div class="company-img">
+                                                <img src="../../assets/images/nn.png" alt="img" height="85px" width="85px" alt="dgd">
+                                            </div>
+                                            <div class="job-tittle job-tittle2">
+                                                <a href="job_details.php?id">
+                                                    <h4>
+                                                        Name
+                                                    </h4>
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        Com Name
+                                                    </li>
+                                                    <li><i class="fas fa-map-marker-alt"></i>
+                                                        LOC
+                                                    </li>
+                                                    <li>
+                                                        SAL
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="items-link items-link2 f-right">
+                                            <a href="job_details.php">
+                                                Details
+                                            </a>
+                                            <span>5 Spots Available</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!--<?php
+                                }
+                            } else {
+                                echo "No jobs available";
+                            }
+                            ?>-->
+
+
+                            
+                            </div>
+                    </section>
+                    <!-- Featured_job_end -->
+                </div>
+            </div>
+        </div>
